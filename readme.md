@@ -9,8 +9,6 @@ Trying to learn helm.
 ## Deploy test cluster
 
 ```
-cat ./eks-test-cluster.yml |sed 's/MASTER_ARN/'"${MASTER_ARN}"'/' > eks-test-cluster.deploy.yml
+cat ./eks-test-cluster.yml | sed 's|MASTER_ARN|'"${MASTER_ARN}"'|' > eks-test-cluster.deploy.yml
 ```
-
-
 
