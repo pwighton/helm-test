@@ -1,0 +1,25 @@
+#
+# AWS addon policies: 
+#  - https://eksctl.io/usage/iam-policies/
+# Spot instaces: 
+#  - https://ec2spotworkshops.com/using_ec2_spot_instances_with_eks/spotworkers/workers_eksctl.html
+#############
+
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eksworkshop-eksctl
+  region: us-east-1
+
+managedNodeGroups:
+- name: default
+  minSize: 0
+  maxSize: 3
+  desiredCapacity: 0
+  iam:
+    withAddonPolicies:
+      albIngress: true
+
+secretsEncryption:
+  keyARN: MASTER_ARN
