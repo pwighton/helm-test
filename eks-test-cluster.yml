@@ -14,9 +14,9 @@ metadata:
 
 managedNodeGroups:
 - name: default
-  minSize: 0
+  minSize: 1
   maxSize: 3
-  desiredCapacity: 0
+  desiredCapacity: 1
   iam:
     withAddonPolicies:
       albIngress: true

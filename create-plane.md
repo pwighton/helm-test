@@ -1,6 +1,6 @@
 # Creating 'Command Plane'
 
-Following along [here]
+Following along [here](https://eksworkshop.com/030_eksctl/launcheks/)
 
 ### Create cloud9 workspace
   - https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-east-1
